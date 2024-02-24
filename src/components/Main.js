@@ -1,6 +1,6 @@
 import React, { useReducer, useEffect } from "react";
 import { Navigate, Route, Routes, useNavigate } from "react-router-dom";
-import Booking from "./Booking";
+import Reserving from "./Reserving";
 import ConfirmedBooking from "./ConfirmedBooking";
 import Header from "./Header";
 
@@ -54,7 +54,7 @@ const Main = () => {
         <main>
             <Routes>
                 <Route path="/" element={<Header />} />
-                <Route path="/booking" element={<Booking availableTimes={state} dispatch={dispatch} submitForm={submitForm}/>} />
+                <Route path="/Reserving" element={<Reserving availableTimes={state} dispatch={dispatch} submitForm={submitForm}/>} />
                 <Route path="/confirmed" element={<ConfirmedBooking/> } />
             </Routes>
         </main>
